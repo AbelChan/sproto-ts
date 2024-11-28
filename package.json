@@ -1,0 +1,23 @@
+{
+  "name": "sproto-ts",
+  "version": "1.0.0",
+  "description": "skynet sproto ts nodejs project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbelChan/sproto-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbelChan/sproto-ts/issues"
+  },
+  "homepage": "https://github.com/AbelChan/sproto-ts#readme",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
