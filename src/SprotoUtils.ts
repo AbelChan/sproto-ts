@@ -1,5 +1,5 @@
-export class utils {
-    static array2arraybuffer(array: any[]) {
+export class SprotoUtils {
+    static array2arraybuffer(array: number[]): ArrayBuffer {
         let arrayBuffer = new ArrayBuffer(array.length);
         let view = new DataView(arrayBuffer, 0);
         for (let i = 0; i < array.length; i++) {
@@ -8,7 +8,7 @@ export class utils {
         return arrayBuffer;
     }
 
-    static arraybuffer2array(arrayBuffer: ArrayBuffer) {
+    static arraybuffer2array(arrayBuffer: ArrayBuffer): number[] {
         let view = new DataView(arrayBuffer, 0);
         let array: number[] = [];
         for (let i = 0; i < view.byteLength; i++) {
@@ -17,7 +17,7 @@ export class utils {
         return array;
     }
 
-    static string2utf8(str: string) {
+    static string2utf8(str: string): number[] {
         let back: number[] = [];
         let byteSize = 0;
         for (let i = 0; i < str.length; i++) {
